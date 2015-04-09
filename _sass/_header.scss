@@ -1,0 +1,68 @@
+.global-header {
+    background-color: $color-base-dark;
+    border-top: 5px solid $color-accent-bright;
+    padding-top: $default-spacing-medium;
+
+    &__heading {
+        margin: $default-spacing-x-small 0;
+        text-align: center;
+
+        @include media-query(em(750px)) {
+            font-size: $font-size-heading-large;
+            margin: $default-spacing-small 0;
+        }
+    }
+
+    a {
+        color: $color-base-light;
+    }
+}
+
+.search {
+    background-color: $color-accent-medium;
+
+    &__container {
+        float: right;
+    }
+
+    &__button,
+    &__input {
+        float: left;
+    }
+
+    &__button {
+        background-color: lighten($color-accent-light, 10%);
+        border: 1px solid lighten($color-accent-light, 10%);
+        color: $color-base-light;
+        cursor: pointer;
+        padding: $default-spacing-medium $default-spacing-large;
+    }
+
+    &__input {
+        background-color: $color-base-light;
+        border: 1px solid lighten($color-accent-light, 25%);
+        padding: $default-spacing-medium $default-spacing-large;
+    }
+}
+
+.menu {
+    ul {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: $color-base-light;
+        display: block;
+        padding: $default-spacing-medium;
+
+        &:hover,
+        &:active {
+            background-color: $color-accent-light;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="post col-12 col-6-md col-offset-3-md col-offset-3-lg">
+
+    <header class="post__header">
+        <h2 class="page__heading">{{ page.title }}</h2>
+    </header>
+
+    <div class="post__content">
+    {{ content }}
+    </div>
+
+    <footer>
+         <p class="post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        <ul class="post__tags">
+            {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    </footer>
+
+</article>

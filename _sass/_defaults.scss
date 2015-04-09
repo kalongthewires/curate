@@ -1,0 +1,57 @@
+
+// DEFAULTS
+// -------------------------------------------------------------------------- */
+$container-max-width: 1500px;
+$font-size-base: 16px;
+
+/* Mixins, functions and extends
+----------------------------------------------------------------------------- */
+
+@function em($px, $em-base: $font-size-base) {
+    @return $px / $em-base * 1em;
+}
+
+@function percent($value, $value-base: $container-max-width) {
+    @return $value / $value-base * 100%;
+}
+
+@mixin media-query($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+/* Spacing
+----------------------------------------------------------------------------- */
+
+$spacing-unit:              15px;
+$default-spacing-x-small:   em($spacing-unit / 5);
+$default-spacing-small:     em($spacing-unit / 3);
+$default-spacing-medium:    em($spacing-unit * 2/3);
+$default-spacing-large:     em($spacing-unit);
+
+/* Color Scheme
+----------------------------------------------------------------------------- */
+
+$color-base-dark:           #211718;
+$color-base-light:          #fdfdfd;
+$color-accent-bright:       #b34b25;
+$color-accent-light:        #958362;
+$color-accent-medium:       #454e62;
+
+/* Typography
+----------------------------------------------------------------------------- */
+
+$font-family-base: "Open Sans", Helvetica, Arial, sans-serif;
+$font-family-secondary: Lato, Georgia, serif;
+$font-family-accent: Georgia, serif;
+
+$font-size-small:   em(13px);
+$font-size-medium:  em(18px);
+$font-size-large:   em(22px);
+
+$font-size-heading-small:   em(16px);
+$font-size-heading-medium:  em(36px);
+$font-size-heading-large: em(48px);
+
+$line-height-base: 1.5;

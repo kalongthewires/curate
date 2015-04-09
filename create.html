@@ -1,0 +1,30 @@
+---
+layout: default
+title: Create
+weight: 1
+---
+
+<main class="create page col-12 col-6-md col-offset-3-md col-offset-3-lg">
+
+    <h3 class="page__heading">Small thoughts and long-form essays.</h3>
+
+    {% for post in site.categories.create %}
+    <article class="post">
+        <header class="post__header">
+            <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="post__meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+        </header>
+
+        {{ post.content }}
+
+        <footer>
+            <ul class="post__tags">
+                {% for tag in post.tags %}
+                <li>{{ tag }}</li>
+                {% endfor %}
+            </ul>
+        </footer>
+    </article>
+    {% endfor %}
+
+</main>

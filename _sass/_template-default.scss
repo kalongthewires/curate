@@ -1,0 +1,131 @@
+
+// DEFAULT TEMPLATE STYLES
+/* -------------------------------------------------------------------------- */
+
+/* General
+----------------------------------------------------------------------------- */
+.wrapper {
+    margin: 0 auto;
+    max-width: $container-max-width;
+    width: 100%;
+}
+
+body {
+    background-color: $color-base-light;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+h1 {
+    font-size: $font-size-heading-medium;
+}
+
+h2 {
+    font-size: $font-size-heading-small;
+}
+
+h2,
+h3 {
+    font-family: $font-family-secondary;
+}
+
+a {
+    color: saturate($color-accent-medium, 50%);
+}
+
+p {
+    margin: $default-spacing-large 0;
+}
+
+small {
+    line-height: 1em;
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+
+main {
+    margin: $default-spacing-medium 0;
+}
+
+.page {
+    margin-bottom: 2em;
+
+    &__heading {
+        font-size: $font-size-large;
+        margin: 2em 0 1em;
+    }
+
+    h3 {
+        margin: 2em 0 1em;
+    }
+}
+
+.post {
+    border-bottom: 1px solid lighten($color-accent-medium, 10%);
+    padding-bottom: $default-spacing-large;
+    padding-top: $default-spacing-large;
+    word-wrap: break-word;
+
+    &:last-child {
+        border: 0;
+    }
+
+    @include media-query (em(900px)) {
+        border: 0;
+    }
+
+    &__meta {
+        color: lighten($color-base-dark, 20%);
+        float: right;
+        font-family: $font-family-accent;
+        font-style: italic;
+        margin-bottom: $default-spacing-large;
+    }
+
+    &__title {
+        border-bottom: 1px dotted $color-accent-medium;
+        font-size: 1em;
+        margin-bottom: $default-spacing-large;
+        padding-bottom: $default-spacing-large;
+    }
+
+    &__content {
+        font-size: $font-size-medium;
+
+        img {
+            display: block;
+
+            &:first-child{
+                margin-top: $default-spacing-large;
+            }
+        }
+
+        blockquote {
+            p {
+                font-family: $font-family-base;
+                margin-bottom: 3%;
+                margin-top: 3%;
+                padding: 0;
+            }
+        }
+
+        cite {
+            font-size: $font-size-small;
+        }
+    }
+
+    &__tags {
+        margin: 3% 0 0;
+
+        li {
+            background-color: lighten($color-accent-bright, 10%);
+            border-radius: 0.1em;
+            color: $color-base-light;
+            display: inline-block;
+            font-size: $font-size-small;
+            padding: $default-spacing-small;
+        }
+    }
+}

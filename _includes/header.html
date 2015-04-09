@@ -1,0 +1,25 @@
+<div class="row">
+
+    <header class="global-header" class="col-12">
+        <h1 class="global-header__heading"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+
+        <nav class="menu">
+            <ul>
+                {% assign pages = site.pages | sort: "weight" %}
+                {% for page in pages %}
+                {% if page.title %}
+                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <div class="search row">
+            <div class="search__container">
+                <input class="search__button" type="submit" name="Search">
+                <input class="search__input" type="text" placeholder="What are you looking for?">
+            </div>
+        </div>
+
+    </header>
+</div>

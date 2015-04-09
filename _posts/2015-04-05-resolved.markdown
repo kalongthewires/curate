@@ -1,0 +1,11 @@
+---
+layout: post
+categories: curate
+title: "Resolved: 7 creative habits"
+date: 2015-04-05
+tags: article
+---
+
+> "Resolved: this will be a year of more ideas and fewer screens for me. I aim to deepen the routines that stoke my enthusiasm, attract new inspiration, develop complex ideas, and connect me with people and places."
+
+<small>Source: [Josh Clark on The Pastry Box Project](https://the-pastry-box-project.net/josh-clark/2015-january-10)</small>
