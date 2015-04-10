@@ -1,7 +1,7 @@
 # Site settings
 title: Curate
 author: Kim Hamper
-description: ""
+description: "A small curation site"
 baseurl: ""
 url: "http://kalongthewires.github.io"
 github_username:  kalongthewires
@@ -11,3 +11,6 @@ permalink: none
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap # Enable automatic site-map generation on Github
