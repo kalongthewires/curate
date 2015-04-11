@@ -1,5 +1,12 @@
 ---
 published: true
+title: "2015-04-10-emptying-the-cup.markdown"
+layout: post
+categories: 
+  - curate
+date: "2015-04-10"
+tags: 
+  - book
 ---
 
 > A Zen master of great renown was visited by a young philosopher who had traveled from a distant land to meet him. The master agreed to see him because the philosopher came with high recommendations by his teachers. The two sat under a tree to converse and the subject hastily turned to what the master could teach the young philosopher. Recognizing the flame of youth, the master smiled warmly and started to describe his meditation techniques. He was cut short by the philosopher, who said: “Yes, I understand what you are talking about! We did a similar technique at the temple, but instead we used images to focus!”
