@@ -38,6 +38,14 @@ p {
     margin: $default-spacing-large 0;
 }
 
+ol, ul {
+    padding-left: $default-spacing-large * 3/2;
+}
+
+img {
+    max-width: 100%;
+}
+
 small {
     line-height: 1em;
 }
@@ -118,6 +126,7 @@ main {
 
     &__tags {
         margin: 3% 0 0;
+        padding: 0;
 
         li {
             background-color: lighten($color-accent-bright, 10%);
