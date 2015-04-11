@@ -28,14 +28,24 @@ prose:
         _posts:
             - name: "categories"
               field:
-                element: "text"
+                element: "multiselect"
                 label: "Categories"
-                value: ""
+                placeholder: "Choose Categories"
+                options:
+                    - name: "Curate"
+                      value: "curate"
+                    - name: "Create"
+                      value: "create"
             - name: "layout"
               field:
                 element: "text"
                 label: "Layout"
                 value: "post"
+            - name: "title"
+              field:
+                element: "text"
+                label: "Title"
+                value: ""
             - name: "date"
               field:
                 element: "text"
