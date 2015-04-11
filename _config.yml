@@ -18,3 +18,52 @@ markdown: kramdown
 gems:
   - jekyll-sitemap # Enable automatic site-map generation on Github
   - jemoji # Enable emoji on Github - cheat sheet here: http://www.emoji-cheat-sheet.com/
+
+  # Prose.io settings (markdown editor)
+  # source: Prose Starter - https://github.com/prose/starter/
+siteurl: 'http://kalongthewires.github.io/'
+media: 'images'
+metadata:
+    _posts:
+        - name: "categories"
+          field:
+            element: "text"
+            label: "Categories"
+            value: ""
+        - name: "layout"
+          field:
+            element: "text"
+            label: "Layout"
+            value: "post"
+        - name: "title"
+          field:
+            element: "text"
+            label: "Title"
+            value: ""
+        - name: "date"
+          field:
+            element: "text"
+            label: "Date"
+            value: ""
+        - name: "tags"
+          field:
+            element: "multiselect"
+            label: "Tags"
+            placeholder: "Choose Tags"
+            options:
+                - name: "Book"
+                  value: "book"
+                - name: "Article"
+                  value: "article"
+                - name: "Image"
+                  value: "image"
+                - name: "Newsletter"
+                  value: "newsletter"
+                - name: "Film"
+                  value: "film"
+                - name: "Small Thought"
+                  value: "small-thought"
+                - name: "Video"
+                  value: "video"
+                - name: "Essay"
+                  value: "essay"
