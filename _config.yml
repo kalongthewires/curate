@@ -2,7 +2,7 @@
 title: Curate
 author: Kim Hamper
 description: "A small curation site"
-baseurl: "./curate"
+baseurl: "."
 url: "http://kalongthewires.github.io"
 github_username:  kalongthewires
 
