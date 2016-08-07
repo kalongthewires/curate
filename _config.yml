@@ -19,7 +19,7 @@ gems:
 # Prose.io settings (markdown editor)
 # source: Prose Starter - https://github.com/prose/starter/
 prose:
-    siteurl: 'http://kalongthewires.github.io/curate/'
+    siteurl: 'http://kalongthewires.github.io/'
     media: 'images'
     metadata:
         _posts:
